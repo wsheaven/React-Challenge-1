@@ -1,39 +1,42 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10%; /* Padding is now only for aesthetic spacing */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.colorBox, input[type="text"], button {
+  width: 80vw; /* This will make each element take up 80% of the viewport width */
+  height: 40px; /* Keeping the height uniform */
+  box-sizing: border-box;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
 }
-
 
 .colorBox {
-  width: 300px; /* or any desired width */
-  height: 200px; /* or any desired height */
-  background-color: #f0f0f0; /* light grey background */
-  border: 2px solid #ccc; /* grey border */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow */
+  height: 30vh; /* Keeping the special height setting for colorBox */
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
 }
+
 .input-field {
-  width: 300px; /* Match the width of the box */
-  margin-top: 20px; /* Space between the box and the input */
+  margin-top: 20px;
 }
-input[type="text"] {
-  width: 100%;
-  height: 40px; /* Height of the input field */
-  box-sizing: border-box; /* Include padding and borders in the width */
-  padding: 0 10px; /* Padding inside the input */
-  border: 1px solid #ccc;
-  font-size: 16px; /* Larger font size for better readability */
+
+button {
+  cursor: pointer;
+  background-color: #e7e7e7;
+  outline: none;
 }
