@@ -8,12 +8,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 0 10%; /* Padding is now only for aesthetic spacing */
+  padding: 0 10%; 
 }
 
 .colorBox, input[type="text"], button {
-  width: 80vw; /* This will make each element take up 80% of the viewport width */
-  height: 40px; /* Keeping the height uniform */
+  width: 80vw; 
+  height: 40px; 
   box-sizing: border-box;
   padding: 0 10px;
   border: 1px solid #ccc;
@@ -21,7 +21,7 @@ body {
 }
 
 .colorBox {
-  height: 30vh; /* Keeping the special height setting for colorBox */
+  height: 30vh; 
   background-color: #f0f0f0;
   border: 2px solid #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
